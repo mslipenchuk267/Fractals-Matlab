@@ -1,0 +1,1 @@
+% Source:   http://www.albertostrumia.it/sites/default/files/Fractals/FractalMatlab/Mand.html% Produes:  f(z)=z^4+ccol=20;r=10;m=400;cx=-.6;cy=0;l=1.5;x=linspace(cx-l,cx+l,m);y=linspace(cy-l,cy+l,m);[X,Y]=meshgrid(x,y);Z=zeros(m);C=X+i*Y;for k=1:col;Z=Z.^4+C;W=exp(-abs(Z));endcolormap copper(256);pcolor(W);shading flat;axis('square','equal','off');
